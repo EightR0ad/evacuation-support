@@ -6,7 +6,9 @@ import path from "path"
 // https://vite.dev/config/
 export default defineConfig({
   base: "/evacuation-support/",
-  plugins: [react(), cesium()],
+  plugins: [react(), cesium({
+    rebuildCesium: false,
+  })],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src")
