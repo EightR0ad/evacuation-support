@@ -57,7 +57,7 @@ export function useCesium(containerRef: React.RefObject<HTMLDivElement | null>) 
         async function init() {
             try {
                 // 1. 3Dタイル（地図モデル）を読み込む
-                await loadTileset(viewer, '/tiles/tileset.json');
+                await loadTileset(viewer, './tileset.json');
 
                 // 2. 避難所データを読み込み、地図に表示
                 await loadEvacuationData(viewer);
